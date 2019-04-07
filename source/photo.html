@@ -5,119 +5,124 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
   <header class="page-header">
-    <a class="page-header__logo">Pink</a>
     <nav class="main-nav">
+      <a class="main-nav__logo">
+        <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink"></a>
       <button class="main-nav__toggle" type="button">Открыть меню</button>
       <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--sctive">
-          <a href="index.html">Главная</a>
+        <li class="site-list__item site-list__item--active">
+          <a class="site-list__item-link" href="index.html">Главная</a>
         </li>
         <li class="site-list__item">
-          <a>Фотографии</a>
+          <a class="site-list__item-link">Фотографии</a>
         </li>
         <li class="site-list__item">
-          <a href="form.html">Конкурс</a>
+          <a class="site-list__item-link" href="form.html">Конкурс</a>
         </li>
         <li class="site-list__item">
-          <a href="https://htmlacademy.ru">HTML Academy</a>
+          <a class="site-list__item-link" href="https://htmlacademy.ru">HTML Academy</a>
         </li>
       </ul>
     </nav>
   </header>
 
-  <main class="page-foto">
-    <h1 class="foto-title">Фотографии пользователей</h1>
-
-    <section class="foto-album">
-      <p class="foto-album__text">Взгляните на фотографии, которые выкладывают пользователи!</p>
-      <p class="foto-album__text">Видите, как не хватает ваших?</p>
-      <figure class="foto-album__item">
-        <a class="foto-album__link" href="#"><img class="foto-album__image" src="placehold.it/320x137"></a>
-        <span class="foto-day">Панорама дня</span>
-        <figcaption class="foto-album__caption">
-          <span class="foto-album__autor-name">Анна</span>
-          <span class="foto-album__time">(5 часов назад)</span>
-          <p class="foto-album__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-          <button class="foto-album__like" type="button"><span class="visually-hidden">Нравиться</span></button>
-          <p class="foto-album__like-text">Нравится:215</p>
+  <main class="page-photo">
+    <div class="page-photo__title-wrapper">
+      <h1 class="page-photo__title">Фотографии пользователей</h1>
+    </div>
+    <section class="photo-album">
+      <div class="photo-album__title-wrapper">
+        <p class="photo-album__title">Взгляните на фотографии, которые выкладывают пользователи!</p>
+        <p class="photo-album__title">Видите, как не хватает ваших?</p>
+      </div>
+      <figure class="photo-album__item">
+        <a class="photo-album__link" href="#"><img class="photo-album__image" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама"></a>
+        <span class="photo-day">Панорама дня</span>
+        <figcaption class="photo-album__caption">
+          <span class="photo-album__autor-name">Анна</span>
+          <span class="photo-album__time">(5 часов назад)</span>
+          <p class="photo-album__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          <button class="photo-album__like" type="button"><span class="visually-hidden">Нравиться</span></button>
+          <p class="photo-album__like-text">Нравится:215</p>
         </figcaption>
       </figure>
 
-      <figure class="foto-album">
-        <a class="foto-album__link" href="#"> <img class="foto-album__image" src="placehold.it/280x180"></a>
-        <figcaption class="foto-album__caption">
-          <span class="foto-album__autor-name">Левон</span>
-          <span class="foto-album__time">(5 часов назад)</span>
-          <p class="foto-album__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-          <button class="foto-album__like" type="button"><span class="visually-hidden">Нравиться</span></button>
-          <p class="foto-album__like-text">Нравится:356</p>
+      <figure class="photo-album__item">
+        <a class="photo-album__link" href="#"> <img class="photo-album__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Автомобиль"></a>
+        <figcaption class="photo-album__caption">
+          <span class="photo-album__autor-name">Левон</span>
+          <span class="photo-album__time">(5 часов назад)</span>
+          <p class="photo-album__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          <button class="photo-album__like" type="button"><span class="visually-hidden">Нравиться</span></button>
+          <p class="photo-album__like-text">Нравится:356</p>
         </figcaption>
       </figure>
 
-      <figure class="foto-album">
-        <a class="foto-album__link" href="#"><img class="foto-album__image" src="placehold.it/280x180"></a>
-        <figcaption class="foto-album__caption">
-          <span class="foto-album__autor-name">Антон</span>
-          <span class="foto-album__time">(12 часов назад)</span>
-          <p class="foto-album__text">Соседи будут рады!</p>
-          <button class="foto-album__like" type="button"><span class="visually-hidden">Нравиться</span></button>
-          <p class="foto-album__like-text">Нравится:666</p>
+      <figure class="photo-album__item">
+        <a class="photo-album__link" href="#"><img class="photo-album__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Барабан"></a>
+        <figcaption class="photo-album__caption">
+          <span class="photo-album__autor-name">Антон</span>
+          <span class="photo-album__time">(12 часов назад)</span>
+          <p class="photo-album__text">Соседи будут рады!</p>
+          <button class="photo-album__like" type="button"><span class="visually-hidden">Нравиться</span></button>
+          <p class="photo-album__like-text">Нравится:666</p>
         </figcaption>
       </figure>
 
-      <figure class="foto-album">
-        <a class="foto-album__link" href="#"><img class="foto-album__image" src="placehold.it/280x180"></a>
-        <figcaption class="foto-album__caption">
-          <span class="foto-album__autor-name">Борис</span>
-          <span class="foto-album__time">(20 часов назад)</span>
-          <p class="foto-album__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-          <button class="foto-album__like" type="button"><span class="visually-hidden">Нравиться</span></button>
-          <p class="foto-album__like-text">Нравится:215</p>
+      <figure class="photo-album__item">
+        <a class="photo-album__link" href="#"><img class="photo-album__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Окно"></a>
+        <figcaption class="photo-album__caption">
+          <span class="photo-album__autor-name">Борис</span>
+          <span class="photo-album__time">(20 часов назад)</span>
+          <p class="photo-album__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+          <button class="photo-album__like" type="button"><span class="visually-hidden">Нравиться</span></button>
+          <p class="photo-album__like-text">Нравится:215</p>
         </figcaption>
       </figure>
 
-      <figure class="foto-album">
-        <a class="foto-album__link" href="#"><img class="foto-album__image" src="placehold.it/280x180"></a>
-        <figcaption class="foto-album__caption">
-          <span class="foto-album__autor-name">Сергей</span>
-          <span class="foto-album__time">(25 часов назад)</span>
-          <p class="foto-album__text">Самая кубанская в мире!</p>
-          <button class="foto-album__like" type="button"><span class="visually-hidden">Нравиться</span></button>
-          <p class="foto-album__like-text">Нравится:4</p>
+      <figure class="photo-album__item">
+        <a class="photo-album__link" href="#"><img class="photo-album__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Кубанская бахча"></a>
+        <figcaption class="photo-album__caption">
+          <span class="photo-album__autor-name">Сергей</span>
+          <span class="photo-album__time">(25 часов назад)</span>
+          <p class="photo-album__text">Самая кубанская в мире!</p>
+          <button class="photo-album__like" type="button"><span class="visually-hidden">Нравиться</span></button>
+          <p class="photo-album__like-text">Нравится:4</p>
         </figcaption>
       </figure>
 
-      <figure class="foto-album">
-        <a class="foto-album__link" href="#"><img src="placehold.it/280x180"></a>
-        <figcaption class="foto-album__image">
-          <span class="foto-album__autor-name">Максим</span>
-          <span class="foto-album__time">(40 часов назад)</span>
-          <p class="foto-album__text">Где снег-то?</p>
-          <button class="foto-album__like" type="button"><span class="visually-hidden">Нравиться</span></button>
-          <p class="foto-album__like-text">Нравится:150</p>
+      <figure class="photo-album__item">
+        <a class="photo-album__link" href="#"><img src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Ноги"></a>
+        <figcaption class="photo-album__caption">
+          <span class="photo-album__autor-name">Максим</span>
+          <span class="photo-album__time">(40 часов назад)</span>
+          <p class="photo-album__text">Где снег-то?</p>
+          <button class="photo-album__like" type="button"><span class="visually-hidden">Нравиться</span></button>
+          <p class="photo-album__like-text">Нравится:150</p>
         </figcaption>
       </figure>
 
-      <figure class="foto-album">
-        <a class="foto-album__link" href="#"><img src="placehold.it/280x180"></a>
-        <figcaption class="foto-album__image">
-          <span class="foto-album__autor-name">Надежда</span>
-          <span class="foto-album__time">(45 часов назад)</span>
-          <p class="foto-album__text">Всем GM и взаимные лайки!</p>
-          <button class="foto-album__like" type="button"><span class="visually-hidden">Нравиться</span></button>
-          <p class="foto-album__like-text">Нравится:2560</p>
+      <figure class="photo-album__item">
+        <a class="photo-album__link" href="#"><img src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Крыло самолета"></a>
+        <figcaption class="photo-album__caption">
+          <span class="photo-album__autor-name">Надежда</span>
+          <span class="photo-album__time">(45 часов назад)</span>
+          <p class="photo-album__text">Всем GM и взаимные лайки!</p>
+          <button class="photo-album__like" type="button"><span class="visually-hidden">Нравиться</span></button>
+          <p class="photo-album__like-text">Нравится:2560</p>
         </figcaption>
       </figure>
 
     </section>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo" href="index.html">Pink</a>
+        <a class="page-footer__logo" href="index.html"> <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink"></a>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">

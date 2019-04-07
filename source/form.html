@@ -5,38 +5,40 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
   <header class="page-header">
-    <a class="page-header__logo">Pink
-    </a>
     <nav class="main-nav">
+      <a class="main-nav__logo">
+        <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink"></a>
       <button class="main-nav__toggle" type="button">Открыть меню</button>
       <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--sctive">
-          <a href="index.html">Главная</a>
+        <li class="site-list__item site-list__item--active">
+          <a class="site-list__item-link" href="index.html">Главная</a>
         </li>
         <li class="site-list__item">
-          <a>Фотографии</a>
+          <a class="site-list__item-link" href="photo.html">Фотографии</a>
         </li>
         <li class="site-list__item">
-          <a href="form.html">Конкурс</a>
+          <a class="site-list__item-link">Конкурс</a>
         </li>
         <li class="site-list__item">
-          <a href="https://htmlacademy.ru">HTML Academy</a>
+          <a class="site-list__item-link" href="https://htmlacademy.ru">HTML Academy</a>
         </li>
       </ul>
     </nav>
   </header>
 
-  <main class="page-foto">
-    <h1 class="foto-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-
+  <main class="page-contest">
+    <div class="page-contest__title-wrapper">
+      <h1 class="page-contest-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    </div>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo" href="index.html">Pink</a>
+        <a class="page-footer__logo" href="index.html"><img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink"></a>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
