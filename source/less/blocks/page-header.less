@@ -1,9 +1,25 @@
 .page-header {
   display: flex;
-  /*flex-direction: column;*/
+  flex-direction: column;
 
   margin: 0;
   padding-top: 22px;
 
-  background-color: @bg-darkblue;
+  background: @bg-image;
+}
+
+.page-header__logo {
+  height: 66px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__logo {
+    height: 110px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__logo {
+    height: 110px;
+  }
 }
