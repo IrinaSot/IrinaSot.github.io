@@ -2,10 +2,16 @@
   display: flex;
   flex-direction: column;
 
-  margin: 0;
-  padding-top: 22px;
-
   background: @bg-image;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    display: flex;
+    flex-direction: column;
+
+    background: @bg-darkblue url("../img/bg-back-tablet@1x.jpg") no-repeat 0 0;
+  }
 }
 
 .page-header__logo {
