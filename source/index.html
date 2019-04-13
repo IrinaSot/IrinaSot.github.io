@@ -4,74 +4,84 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <meta name="viwport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
 </head>
 
 <body>
 
   <header class="page-header">
-    <a class="page-header__logo">Pink
-    </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
-          <a>Главная</a>
-        </li>
-        <li class="site-list__item">
-          <a href="photo.html">Фотографии</a>
-        </li>
-        <li class="site-list__item">
-          <a href="form.html">Конкурс</a>
-        </li>
-        <li class="site-list__item">
-          <a href="https://htmlacademy.ru">HTML Academy</a>
-        </li>
-      </ul>
+      <div class="main-nav__wrapper">
+        <a class="main-nav__logo">
+          <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
+        </a>
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__item-link">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__item-link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__item-link" href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__item-link" href="https://htmlacademy.ru">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
     </nav>
-  </header>
 
-  <main class="page-main">
+    <img class="page-header__image-hand" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="Рука с телефоном">
+
     <h1 class="visually-hidden">Pink-взгляни на жизнь ярче</h1>
-    <img class="image-hand" src="#" alt="Рука с телефоном">
 
     <section class="download">
       <h2 class="visually-hidden">Загрузка приложения</h2>
       <a class="download__button button" href="#">Скачать приложение</a>
-      <ul class="application">
-        <li class="application__item">
-          <a class="application__link application__link--apple" href="https://www.apple.com/ru/itunes/">iTunes</a>
+      <ul class="download__application">
+        <li class="download__application-item">
+          <a class="download__application-link download__application-link--apple" href="https://www.apple.com/ru/itunes/">iTunes</a>
         </li>
-        <li class="application__item">
-          <a class="application__link application__link--android" href="https://play.google.com/store">Google Play</a>
+        <li class="download__application-item">
+          <a class="download__application-link download__application-link--android" href="https://play.google.com/store">Google Play</a>
         </li>
-        <li class="application__item">
-          <a class="application__link application__link--microsoft" href="https://www.microsoft.com/ru-ru/store/apps/windows">Microsoft Store</a>
+        <li class="download__application-item">
+          <a class="download__application-link download__application-link--microsoft" href="https://www.microsoft.com/ru-ru/store/apps/windows">Microsoft Store</a>
         </li>
       </ul>
       <p class="download__caption">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </section>
+    <!-- </div>-->
+  </header>
 
+  <main class="page-main">
     <section class="advantages">
       <h2 class="visually-hidden">Наши преимущества</h2>
-      <p class="advantages_intro">Устали от серости мегаполиса?</p>
-      <p class="advantages_intro">Нам есть, что вам предложить!</p>
-
-      <ul class="advantages__list advantages__list--image">
-        <li class="advantages__item">
-          <h3 class="advantages__title">Поднимает настроение</h3>
-          <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-        </li>
-        <li class="advantages__item">
-          <h3 class="advantages__title">Меняет мир вокруг</h3>
-          <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-        </li>
-        <li class="advantages__item">
-          <h3 class="advantages__title">Заводить новых друзей</h3>
-          <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-        </li>
-      </ul>
-      <img class="advantages__image-hello" src="#" alt="Телефон со смайликом">
+      <div class="advantages__intro-wrapper">
+        <p class="advantages__intro">Устали от серости мегаполиса?</p>
+        <p class="advantages__intro">Нам есть, что вам предложить!</p>
+      </div>
+      <div class="advantages__wrapper">
+        <ul class="advantages__list advantages__list--image">
+          <li class="advantages__item">
+            <h3 class="advantages__title">Поднимает настроение</h3>
+            <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__title">Меняет мир вокруг</h3>
+            <p class="advantages__ scription">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__title">Заводить новых друзей</h3>
+            <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+        <img class="advantages__image-hello" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Телефон со смайликом">
+      </div>
     </section>
 
   </main>
