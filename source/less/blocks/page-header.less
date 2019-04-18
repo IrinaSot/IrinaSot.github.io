@@ -10,17 +10,10 @@
 }
 
 .page-header__top {
+  position: relative;
   display: flex;
   flex-direction: column;
-  width: 280px;
   margin: 0 auto;
-  margin-bottom: 396px;
-  /*margin-top: -200px;*/
-}
-
-.page-header__logo-wrapp {
-  position: relative;
-  width: 320px;
 }
 
 .page-header__logo {
@@ -28,8 +21,7 @@
   width: 280px;
   padding: 19px 20px;
 
-  background-color: @bg-darkblue;
-
+  //background-color: @bg-darkblue;
 }
 
 .page-header__logo-image {
@@ -38,10 +30,6 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-header {
-    background: @bg-darkblue url("../img/bg-back-tablet@1x.jpg") no-repeat 0 0;
-  }
-
   .page-header__inner {
     width: auto;
     margin: 0 auto;
@@ -49,8 +37,9 @@
 
   .page-header__top {
     position: relative;
-    width: 620px;
     margin: 0 auto;
+
+    background-color: @bg-darkblue;
   }
 
   .page-header__logo-image {
@@ -60,7 +49,18 @@
 }
 
 @media (min-width: @desktop-width) {
+  .page-header__inner{
+    margin: 0 auto;
+  }
   .page-header__top {
+    position: absolute;
+    left: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     width: 940px;
+    margin-left: -470px;
+    background-color: rgba(29, 38, 49, 0.7);
+    z-index: 3;
   }
 }
