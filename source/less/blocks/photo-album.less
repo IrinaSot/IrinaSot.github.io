@@ -1,15 +1,59 @@
+.photo-album {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .photo-album__title {
   .indent-reset;
-
+  text-align: center;
   font-family: @ff-light;
   color: #283645;
 }
 
+.photo-album__title-wrapper {
+  padding: 55px 20px;
+}
+
 .photo-album__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  .list-reset;
+  width: 280px;
+  margin-bottom: 20px;
+}
+
+.photo-album__link {
   .indent-reset;
+
+}
+
+.photo-album__image {
+  display: block;
+}
+
+.photo-album__prime {
+  margin: 0;
+}
+
+.photo-album__photo-day {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  padding: 6px 20px;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #d22856;
 }
 
 .photo-album__caption {
+  padding-left: 17px;
+  padding-right: 20px;
   padding-top: 25px;
   padding-bottom: 25px;
 
@@ -36,6 +80,10 @@
   line-height: 24px;
 }
 
+.photo-album__like-wrap {
+  display: flex;
+}
+
 .photo-album__like {
   fill: #d22856;
 
@@ -50,4 +98,65 @@
   font-size: 12px;
   line-height: 24px;
   color: #d22856;
+}
+
+@media (min-width: @tablet-width) {
+  .photo-album {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .photo-album__title-wrapper {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .photo-album__item-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .photo-album__item {
+    width: 300px;
+  }
+
+  .photo-album__prime {
+    width: 660px;
+
+    .photo-album__text {
+      order: 2;
+    }
+
+    .photo-album__like-wrap {
+      justify-content: flex-end;
+    }
+  }
+
+  .photo-album__caption {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .photo-album__like-wrap {
+    justify-content: space-between;
+  }
+
+  .photo-album__like {
+    order: 2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-album__item-wrap{
+    justify-content: center;
+  }
+  .photo-album__item{
+    margin-right: 20px;
+  }
+  .photo-album__prime {
+    width: 940px;
+  }
 }
