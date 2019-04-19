@@ -23,9 +23,15 @@
   text-align: center;
 }
 
-.advantages__wrapper::before {
+.advantages__list {
+  .list-reset;
+  padding-bottom: 323px;
+}
+
+.advantages__list li:last-child::after {
   content: "";
   position: absolute;
+  top: auto;
   bottom: 0;
   left: 50%;
   width: 157px;
@@ -34,11 +40,6 @@
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: 0 0;
-}
-
-.advantages__list {
-  .list-reset;
-  padding-bottom: 323px;
 }
 
 .advantages__item {
@@ -71,19 +72,6 @@
     margin-bottom: 102px;
   }
 
-  .advantages__wrapper::before {
-    content: "";
-    position: absolute;
-    bottom: -65px;
-    left: 70px;
-    width: 268px;
-    height: 547px;
-    //margin-left: -78px;
-    background-image: url("../img/iphone-screen-3-tablet@1x.png");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
-
   .advantages__intro-wrapper {
     padding-top: 58px;
   }
@@ -96,6 +84,11 @@
     margin-left: 320px;
     padding-bottom: 35px;
     text-align: left;
+  }
+
+  .advantages__list li:last-child::after {
+    left: 100px;
+    bottom: 0;
   }
 
   .advantages__research {
@@ -192,7 +185,6 @@
     left: 50px;
     width: 292px;
     height: 382px;
-    //margin-left: -78px;
     background-image: url("../img/iphone-screen-1-desktop@1x.png");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -205,23 +197,16 @@
     left: 450px;
     width: 292px;
     height: 382px;
-    //margin-left: -78px;
     background-image: url("../img/iphone-screen-2-desktop@1x.png");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
 
   .advantages__list li:last-of-type::after {
-    content: "";
-    position: absolute;
-    bottom: 250px;
-    right: 50px;
-    width: 292px;
-    height: 382px;
-    //margin-left: -78px;
-    background-image: url("../img/iphone-screen-3-desktop@1x.png");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    left: auto;
+    right: auto;
+    top: 0;
+    bottom: auto;
   }
 
   .advantages__item {

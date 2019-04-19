@@ -1,6 +1,6 @@
 .page-header {
-  width: 100%;
-
+  position: relative;
+  width: auto;
   background-color: @bg-darkblue;
 }
 
@@ -20,7 +20,6 @@
   display: block;
   width: 280px;
   padding: 19px 20px;
-
   //background-color: @bg-darkblue;
 }
 
@@ -53,15 +52,20 @@
     margin: 0 auto;
   }
 
-  .page-header__top {
+  .page-header_menu-wrapp {
     position: absolute;
-    left: 50%;
+    width: 1200px;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 3;
+  }
+
+  .page-header__top {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 940px;
-    margin-left: -470px;
-    background-color: rgba(29, 38, 49, 0.7);
-    z-index: 3;
+    width: 960px;
+    margin: 0 auto;
+    background-color: transparent;
   }
 }
