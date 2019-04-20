@@ -3,8 +3,9 @@
   padding-bottom: 85px;
   padding-left: 75px;
   padding-right: 75px;
+  text-align: center;
 
-  background: @bg-darkblue url("../img/bg-back-mobile@1x.jpg") no-repeat 0 0;
+  background: #1d2631 url("../img/bg-back-mobile@1x.jpg") no-repeat 50% -66px;
 }
 
 .page-contest__title {
@@ -13,4 +14,20 @@
   font-weight: 300;
   font-size: 24px;
   color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .page-contest__title-wrapper {
+    .bg-tablet;
+  }
+
+  .page-contest__title {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-contest__title-wrapper {
+    .bg-desktop;
+  }
 }
