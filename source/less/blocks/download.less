@@ -11,7 +11,7 @@
   content: "";
   position: absolute;
   top: 109px;
-  left: -1px;
+  left: 0;
   width: 286px;
   height: 314px;
   background-image: url("../img/iphone-hand-mobile@1x.png");
@@ -40,6 +40,15 @@
   padding: 14px 35px 16px;
   border: 3px solid #ffffff;
   border-radius: 25px;
+
+  &:hover {
+    color: #d22856;
+    background-color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
 }
 
 .download__application {
@@ -56,9 +65,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 46px;
+  width: 47px;
   height: 56px;
-  margin-left: 36px;
+  margin-left: 37px;
   margin-right: 32px;
 }
 
