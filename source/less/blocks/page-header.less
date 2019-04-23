@@ -19,8 +19,13 @@
 .page-header__logo {
   display: block;
   width: 280px;
-  padding: 19px 20px;
-  //background-color: @bg-darkblue;
+  padding: 22px 20px 15px;
+
+  &:hover .page-header__logo-image {
+    polygon {
+      fill: #d22856;
+    }
+  }
 }
 
 .page-header__logo-image {
@@ -39,6 +44,10 @@
     margin: 0 auto;
 
     background-color: @bg-darkblue;
+  }
+
+  .page-header__logo {
+    padding: 27px 18px 33px;
   }
 
   .page-header__logo-image {

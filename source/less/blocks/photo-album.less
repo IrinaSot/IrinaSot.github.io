@@ -12,7 +12,12 @@
 }
 
 .photo-album__title-wrapper {
-  padding: 55px 20px;
+  padding: 46px 20px 49px;
+}
+
+.photo-album__item-wrap {
+  width: 320px;
+  margin: 0;
 }
 
 .photo-album__item {
@@ -22,6 +27,8 @@
   flex-wrap: wrap;
   .list-reset;
   width: 280px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 20px;
 }
 
@@ -34,14 +41,21 @@
 }
 
 .photo-album__prime {
-  margin: 0;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.photo-album__prime .photo-album__caption {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .photo-album__photo-day {
   position: absolute;
   top: 0;
   right: 20px;
-  padding: 6px 20px;
+  padding: 6px 20px 6px 18px;
   color: #ffffff;
   font-size: 12px;
   line-height: 24px;
@@ -53,15 +67,23 @@
 .photo-album__caption {
   padding-left: 17px;
   padding-right: 20px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 15px;
+  padding-bottom: 19px;
 
   color: #283645;
 
   background-color: @bg-lightgrey;
 }
 
+.photo-album__caption-wrap {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
 .photo-album__autor-name {
+  margin: 0;
+  padding: 0;
   font-weight: bold;
 }
 
@@ -69,11 +91,12 @@
   font-family: @ff-light;
   font-size: 12px;
   line-height: 24px;
+  text-transform: uppercase;
 }
 
 .photo-album__text {
   .indent-reset;
-
+  margin-bottom: 8px;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
@@ -81,9 +104,12 @@
 
 .photo-album__like-wrap {
   display: flex;
+  .indent-reset;
 }
 
 .photo-album__like {
+  .indent-reset;
+  margin-right: 18px;
   fill: #d22856;
 
   border: none;
@@ -96,6 +122,7 @@
   font-family: @ff-light;
   font-size: 12px;
   line-height: 24px;
+  text-transform: uppercase;
   color: #d22856;
 }
 
@@ -109,6 +136,7 @@
 
   .photo-album__title-wrapper {
     width: 100%;
+    padding: 93px 60px 76px;
     font-size: 18px;
   }
 
@@ -116,6 +144,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 660px;
+    margin: 0;
   }
 
   .photo-album__item {
