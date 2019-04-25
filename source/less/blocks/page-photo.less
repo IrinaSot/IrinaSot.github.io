@@ -22,7 +22,7 @@
   .page-photo__title-wrapper {
     .bg-tablet;
 
-    @media (min-resolution: @retina-dpi), (min-resolution:@retina-dppx) {
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/iphone-hand-tablet@2x.png");
       background-size: 660px 545px;
     }
@@ -39,11 +39,12 @@
     .bg-desktop;
 
     @media (min-resolution: @retina-dpi),
-    (min-resolution:@retina-dppx) {
+      (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
       background-size: 2560px 853px;
     }
   }
+
   .page-photo__title {
     font-size: 50px;
     line-height: 60px;
