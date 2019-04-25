@@ -51,6 +51,11 @@
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+
+  @media (min-resolution: @retina-dpi), (min-resolution:@retina-dppx) {
+    background-image: url("../img/iphone-screen-mobile@2x.png");
+    background-size: 157px 320px;
+  }
 }
 
 .advantages__item {
@@ -115,8 +120,23 @@
   }
 
   .advantages__list li:last-child::after {
+    content: "";
+    position: absolute;
     left: 100px;
-    bottom: 0;
+    bottom: 2px;
+    top: auto;
+
+    width: 268px;
+    height: 481px;
+
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    @media (min-resolution: @retina-dpi), (min-resolution:@retina-dppx) {
+      background-image: url("../img/iphone-screen-3-tablet@2x.png");
+      background-size: 268px 481px;
+    }
   }
 
   .advantages__item {
@@ -229,6 +249,11 @@
     background-image: url("../img/iphone-screen-1-desktop@1x.png");
     background-repeat: no-repeat;
     background-position: 0 0;
+
+    @media (min-resolution: @retina-dpi), (min-resolution:@retina-dppx) {
+      background-image: url("../img/iphone-screen-1-desktop@2x.png");
+      background-size: 292px 302px;
+    }
   }
 
   .advantages__list li:nth-of-type(2)::before {
@@ -241,13 +266,30 @@
     background-image: url("../img/iphone-screen-2-desktop@1x.png");
     background-repeat: no-repeat;
     background-position: 0 0;
+
+    @media (min-resolution: @retina-dpi), (min-resolution:@retina-dppx) {
+      background-image: url("../img/iphone-screen-2-desktop@2x.png");
+      background-size: 292px 302px;
+    }
   }
 
   .advantages__list li:last-of-type::after {
-    left: auto;
-    right: auto;
-    top: -20px;
+    left: 854px;
+    right: 0;
+    top: -4px;
     bottom: auto;
+
+    width: 292px;
+    height: 382px;
+
+    background-image: url("../img/iphone-screen-3-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    @media (min-resolution: @retina-dpi), (min-resolution:@retina-dppx) {
+      background-image: url("../img/iphone-screen-3-desktop@2x.png");
+      background-size: 292px 302px;
+    }
   }
 
   .advantages__item {
