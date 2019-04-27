@@ -1,7 +1,8 @@
 .page-header {
   position: relative;
   width: auto;
-  background-color: @bg-darkblue;
+  // background-color: @bg-darkblue;
+  //z-index: 2;
 }
 
 .page-header__inner {
@@ -14,12 +15,22 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 3;
+}
+
+.page-header__top-open {
+  background-color: @bg-darkblue;
+}
+
+.page-header__top-close {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .page-header__logo {
   display: block;
   width: 280px;
-  padding: 22px 20px 15px;
+  padding: 22px 20px 13px;
 
   &:hover .page-header__logo-image {
     polygon {
@@ -42,8 +53,6 @@
   .page-header__top {
     position: relative;
     margin: 0 auto;
-
-    background-color: @bg-darkblue;
   }
 
   .page-header__logo {
@@ -75,7 +84,7 @@
     justify-content: space-between;
     width: 960px;
     margin: 0 auto;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   .page-header__logo-wrapp {

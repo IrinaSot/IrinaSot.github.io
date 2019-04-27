@@ -4,7 +4,7 @@
   width: 320px;
   margin: 0 auto;
 
-  // background-color: rgba(40, 54, 69, 0.7);
+  background-color: @bg-darkblue;
 }
 
 .main-nav__list {
@@ -61,7 +61,7 @@
   content: "";
 
   position: absolute;
-  top: 21px;
+  top: 22px;
   right: 21px;
 
   width: 50px;
@@ -82,8 +82,9 @@
   width: 23px;
   height: 24px;
 
-  //background-color: transparent;
+
   background: url("../img/icon-menu-cross.svg") no-repeat 0 0;
+  background-color: @bg-darkblue;
   background-size: 23px 24px;
 }
 
@@ -121,7 +122,7 @@
 @media (min-width: @desktop-width) {
   .main-nav {
     width: 630px;
-    //background-color: transparent;
+    background-color: transparent;
   }
 
   .main-nav__list {
