@@ -67,9 +67,24 @@
   width: 50px;
   height: 24px;
 
-  //background-color: transparent;
-  background: url("../img/icon-menu-burger.svg") no-repeat 0 0;
+  background-image: url("../img/icon-menu-burger.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
   background-size: 50px 24px;
+  outline: 0;
+
+  &:hover {
+    background-image: url("../img/icon-menu-burger-red.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 50px 24px;
+    outline: 0;
+  }
+
+  &:active {
+    outline: 0;
+    opacity: 0.3;
+  }
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -86,6 +101,17 @@
   background: url("../img/icon-menu-cross.svg") no-repeat 0 0;
   background-color: @bg-darkblue;
   background-size: 23px 24px;
+  outline: 0;
+
+  &:hover {
+    background: url("../img/icon-menu-cross-red.svg") no-repeat 0 0;
+    outline: 0;
+  }
+
+  &:active {
+    outline: 0;
+    opacity: 0.3;
+  }
 }
 
 @media (max-width: @mobile-tablet-width) {
