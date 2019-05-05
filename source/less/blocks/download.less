@@ -10,7 +10,11 @@
   }
 }
 
-.download::after {
+.download__wrapp {
+  position: relative;
+}
+
+.download__wrapp::after {
   content: "";
   position: absolute;
   top: 178px;
@@ -33,7 +37,7 @@
   align-items: center;
   width: 100%;
   margin: 0 auto;
-  margin-top: 396px;
+  padding-top: 396px;
 }
 
 .download__title {
@@ -109,7 +113,7 @@
     }
   }
 
-  .download::after {
+  .download__wrapp::after {
     content: "";
     position: absolute;
     top: auto;
@@ -131,13 +135,14 @@
   .download__wrapp {
     width: 620px;
     margin: 0 auto;
+    padding: 0 20px;
   }
 
   .download__inner {
     position: relative;
     width: 300px;
     margin: 0;
-    margin-top: 203px;
+    padding-top: 203px;
     z-index: 2;
   }
 
@@ -186,18 +191,25 @@
     }
   }
 
-  .download::after {
+
+  .download__wrapp {
+    margin: 0 auto;
+    width: 940px;
+    padding: 0 10px;
+  }
+
+  .download__wrapp::after {
     content: "";
     position: absolute;
     top: auto;
-    left: 146px;
+    left: 26px;
     bottom: 0;
     width: 1050px;
     height: 645px;
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-repeat: no-repeat;
     background-position: 0 0;
-    z-index: auto;
+    // z-index: auto;
 
     @media (min-resolution: @retina-dpi),
       (min-resolution: @retina-dppx) {
@@ -206,15 +218,8 @@
     }
   }
 
-  .download__wrapp {
-    margin: 0 auto;
-    width: 960px;
-  }
-
   .download__inner {
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 218px;
+    padding-top: 218px;
     z-index: auto;
   }
 
@@ -226,7 +231,7 @@
   .download__button {
     font-size: 21px;
     line-height: 18px;
-    font-weight: bold;
+    font-weight: 700;
     margin: 53px 0 72px;
     width: 303px;
     padding: 13px 30px 19px;
