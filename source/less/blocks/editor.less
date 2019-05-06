@@ -1,0 +1,139 @@
+.editor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.editor__title {
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.editor__container {
+  padding-top: 20px;
+  background-color: @bg-lightgrey;
+}
+
+.editor__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.editor__controls-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .list-reset;
+}
+
+.editor__controls-button {
+  width: 48px;
+  height: 44px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.editor__controls-button--active {
+  opacity: 1;
+}
+
+.editor__controls-button--active .editor__controls-fill {
+  fill: #d22856;
+}
+
+.editor__range-item {
+  position: relative;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid #dddfe0;
+  padding-top: 34px;
+  padding-bottom: 34px;
+}
+
+.editor__range--active {
+  display: flex;
+}
+
+.editor__range__line {
+  width: 240px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.editor__range__toggle {
+  position: absolute;
+  padding: 0;
+  top: 30px;
+  right: 55px;
+  width: 13px;
+  height: 13px;
+  border: 2px solid #d22856;
+  background-color: #ffffff;
+  border-radius: 50%;
+  outline: none;
+
+  &:hover {
+    background-color: #d22856;
+  }
+}
+
+.editor__buttons {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-bottom: 25px;
+}
+
+.editor__button {
+  width: 280px;
+  padding: 16px 0;
+  margin-bottom: 12px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  text-align: center;
+  background-color: #ffffff;
+  outline: none;
+  border: 3px solid #d22856;
+  border-radius: 25px;
+}
+
+.editor__post-button {
+  color: #d22856;
+
+  &:hover {
+    background-color: #d22856;
+    color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+.editor__cancel-button {
+  background-color: #ffffff;
+  color: #b5b9be;
+  border-color: #b5b9be;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    color: #cbced2;
+    background-color: #b5b9be;
+  }
+}

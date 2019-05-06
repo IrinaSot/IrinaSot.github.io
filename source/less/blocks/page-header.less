@@ -27,7 +27,11 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.page-header__top--nojs .page-header__top {
+  background-color: @bg-darkblue;
+}
 .page-header__logo {
+  .indent-reset;
   height: 22px;
 }
 
@@ -105,6 +109,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    // align-items: center;
     width: 940px;
     margin: 0 auto;
     padding: 0 10px;
@@ -112,18 +117,20 @@
   }
 
   .page-header__logo-wrapp {
+    display: flex;
+    //align-self: baseline;
     margin-right: 170px;
   }
 
   .page-header__logo {
-    // padding: 0 10px;
-    margin-right: 110px;
+  //  margin-right: 110px;
   }
 
   .page-header__logo svg {
     width: 147px;
     height: 40px;
     padding: 0;
+    padding-top: 27px;
   }
 
   .page-header__logo-mobile {

@@ -1,0 +1,117 @@
+.price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #f2f2f2;
+}
+
+.price__table {
+  padding: 0;
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.price__table td {
+  padding: 0;
+  position: relative;
+  border: 2px solid #e5e5e5;
+}
+
+.price__table-head {
+  background-color: #283645;
+}
+
+.price__table-name {
+  margin: 0;
+
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.price__table-cost {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 24px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.price__table-head .price__table-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.price__table-body {
+  background-color: #ffffff;
+}
+
+.price__table-option {
+  margin-left: 20px;
+  text-transform: uppercase;
+  color: #283645;
+}
+
+.price__table-value {
+  margin: 0;
+  display: block;
+  width: 75px;
+  height: 58px;
+
+  background-repeat: no-repeat;
+}
+
+.price__table-value--yes {
+  background-image: url("../img/icon-yes-green.svg");
+  background-position: 65% 65%;
+  background-size: 31px 21px;
+}
+
+.price__table-value--no {
+  background-image: url("../img/icon-no-red.svg");
+  background-position: 55% 50%;
+    background-size: 27px 26px;
+}
+
+.bestseller::after {
+  content: "Хит";
+  position: absolute;
+  width: 74px;
+  height: 73px;
+  top: 4px;
+  left: -2px;
+  text-align: center;
+  transform: rotate(-45deg);
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.bestseller::before {
+  content: "";
+  position: absolute;
+  width: 74px;
+  height: 73px;
+  top: -5px;
+  left: 1px;
+  background-image: url(../img/bg-hit-tablet.svg);
+  background-repeat: no-repeat;
+  background-position: left, right;
+}
+
+.price__table-cell {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price__toggles {
+  margin-top: 40px;
+  margin-bottom: 45px;
+}
