@@ -4,7 +4,7 @@
   width: 320px;
   margin: 0 auto;
 
-  // background-color: rgba(40, 54, 69, 0.7);
+  background-color: @bg-darkblue;
 }
 
 .main-nav__list {
@@ -61,15 +61,30 @@
   content: "";
 
   position: absolute;
-  top: 21px;
+  top: 22px;
   right: 21px;
 
   width: 50px;
   height: 24px;
-
-  //background-color: transparent;
-  background: url("../img/icon-menu-burger.svg") no-repeat 0 0;
+  background-color: transparent;
+  background-image: url("../img/icon-menu-burger.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
   background-size: 50px 24px;
+  outline: 0;
+
+  &:hover {
+    background-image: url("../img/icon-menu-burger-red.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 50px 24px;
+    outline: 0;
+  }
+
+  &:active {
+    outline: 0;
+    opacity: 0.3;
+  }
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -82,9 +97,21 @@
   width: 23px;
   height: 24px;
 
-  //background-color: transparent;
+
   background: url("../img/icon-menu-cross.svg") no-repeat 0 0;
+  background-color: @bg-darkblue;
   background-size: 23px 24px;
+  outline: 0;
+
+  &:hover {
+    background: url("../img/icon-menu-cross-red.svg") no-repeat 0 0;
+    outline: 0;
+  }
+
+  &:active {
+    outline: 0;
+    opacity: 0.3;
+  }
 }
 
 @media (max-width: @mobile-tablet-width) {
@@ -93,6 +120,18 @@
   }
 
   .main-nav--opened .main-nav {
+    background-color: @bg-darkblue;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__list {
+    display: block;
+  }
+
+  .main-nav--nojs .main-nav {
     background-color: @bg-darkblue;
   }
 }
@@ -121,7 +160,7 @@
 @media (min-width: @desktop-width) {
   .main-nav {
     width: 630px;
-    //background-color: transparent;
+    background-color: transparent;
   }
 
   .main-nav__list {

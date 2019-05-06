@@ -1,12 +1,13 @@
 .page-header {
   position: relative;
   width: auto;
-  background-color: @bg-darkblue;
+  // background-color: @bg-darkblue;
+  //z-index: 2;
 }
 
 .page-header__inner {
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
 }
 
 .page-header__top {
@@ -14,57 +15,93 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 3;
+}
+
+.page-header__top-open {
+  background-color: @bg-darkblue;
+}
+
+.page-header__top-close {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.page-header__top--nojs .page-header__top {
+  background-color: @bg-darkblue;
 }
 
 .page-header__logo {
-  display: block;
-  width: 280px;
-  padding: 22px 20px 15px;
+  .indent-reset;
+  height: 22px;
+}
 
-  &:hover .page-header__logo-image {
-    polygon {
-      fill: #d22856;
-    }
+.page-header__logo svg {
+  width: 75px;
+  height: 22px;
+  padding: 22px 20px 12px;
+  fill: #ffffff;
+
+  &:hover {
+    fill: #d22856;
+  }
+
+  &:active {
+    fill: #ffffff;
+    opacity: 0.3;
   }
 }
 
-.page-header__logo-image {
-  width: 75px;
-  height: 22px;
+.page-header__logo-tablet {
+  display: none;
+}
+
+.page-header__logo-desktop {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
   .page-header__inner {
-    width: auto;
-    margin: 0 auto;
+    //  width: auto;
+    //  margin: 0 auto;
   }
 
   .page-header__top {
     position: relative;
     margin: 0 auto;
-
-    background-color: @bg-darkblue;
   }
 
   .page-header__logo {
-    padding: 27px 18px 33px;
+    min-height: 110px;
   }
 
-  .page-header__logo-image {
+  .page-header__logo svg {
     width: 147px;
     height: 40px;
+    padding: 27px 20px 43px;
+  }
+
+  .page-header__logo-tablet {
+    display: block;
+  }
+
+  .page-header__logo-mobile {
+    display: none;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .page-header__inner {
-    margin: 0 auto;
+  .page-header {
+    width: 100%;
   }
 
-  .page-header_menu-wrapp {
+  .page-header__inner {
+    //  width: 100%;
+  }
+
+  .page-header__menu-wrapp {
     position: absolute;
-    width: 1200px;
-    margin: 0;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     z-index: 3;
   }
@@ -73,8 +110,35 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 960px;
+    // align-items: center;
+    width: 940px;
     margin: 0 auto;
+    padding: 0 10px;
     background-color: transparent;
+  }
+
+  .page-header__logo-wrapp {
+    display: flex;
+    //align-self: baseline;
+    margin-right: 170px;
+  }
+
+  .page-header__logo svg {
+    width: 147px;
+    height: 40px;
+    padding: 0;
+    padding-top: 27px;
+  }
+
+  .page-header__logo-mobile {
+    display: none;
+  }
+
+  .page-header__logo-tablet {
+    display: none;
+  }
+
+  .page-header__logo-desktop {
+    display: block;
   }
 }

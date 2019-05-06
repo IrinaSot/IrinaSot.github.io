@@ -1,0 +1,48 @@
+.contacts__intro-wrapper {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.contacts__intro {
+  .indent-reset;
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.contacts__list {
+  .list-reset;
+  margin-bottom: 73px;
+  text-align: center;
+}
+
+.contacts__item-text {
+  font-size: 18px;
+  font-weight: 700px;
+}
+
+.contacts__item-info {
+  font-size: 18px;
+  color: #d22856;
+}
+
+.contacts__map {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.contacts__map::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 35px;
+  background-size: 100% auto;
+  background-image: url("../img/bg-triangle-white-footer.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: 2;
+}

@@ -1,0 +1,719 @@
+.form__title-wrap {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  margin-bottom: 36px;
+}
+
+.form__title {
+  .indent-reset;
+  text-align: center;
+  font-size: 14px;
+}
+
+.form__title-hidden {
+  display: none;
+}
+
+.form__user-list {
+  .indent-reset;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  border: none;
+  padding-bottom: 23px;
+}
+
+.form__user-item {
+  .indent-reset;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin-bottom: 18px;
+}
+
+.form__user-label {
+  display: block;
+  margin-bottom: 5px;
+  padding-left: 22px;
+  text-transform: uppercase;
+  color: #d22856;
+}
+
+.form__user-input {
+  box-sizing: border-box;
+  width: 280px;
+  padding: 22px 20px 21px;
+  border: 2px solid #e5e5e5;
+
+  &:hover {
+    border: 2px solid #283645;
+    outline: 0;
+  }
+
+  &:active,
+  &:focus {
+    border: 2px solid #d22856;
+    outline: 0;
+  }
+
+  &::placeholder {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.form__user-progress-wrap {
+  padding-top: 38px;
+  margin-bottom: 30px;
+  background-color: @bg-lightgrey;
+}
+
+.form__user-progress {
+  .indent-reset;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  border: none;
+}
+
+.form__user-progress-title {
+  .indent-reset;
+  margin: 0 auto;
+  margin-bottom: 44px;
+  padding: 0 20px;
+  .title-form;
+}
+
+.form__user-progress-list {
+  .list-reset;
+}
+
+.form__user-progress-item {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 52px;
+  padding-left: 70px;
+}
+
+.form__user-progress-label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  font-size: 18px;
+}
+
+.form__user-progress-checkbox + label::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -70px;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #e5e5e5;
+}
+
+.form__user-progress-input:hover + label::before {
+  border-color: #283645;
+}
+
+.form__user-progress-input:focus + label::before {
+  border-color: #d22856;
+}
+
+.form__user-progress-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -61px;
+  width: 22px;
+  height: 16px;
+  background: url("../img/icon-yes-red.svg") no-repeat 0 0;
+}
+
+.form__user-contacts {
+  .indent-reset;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  border: none;
+  padding-bottom: 25px;
+}
+
+.form__user-contacts-title {
+  display: none;
+}
+
+.form__user-contacts-item {
+  .indent-reset;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin-bottom: 17px;
+}
+
+.form__user-contacts-label {
+  display: block;
+  margin-bottom: 5px;
+  padding-left: 22px;
+  text-transform: uppercase;
+  color: #d22856;
+}
+
+.form__user-contacts-input {
+  box-sizing: border-box;
+  width: 280px;
+  padding: 22px 20px 21px;
+  border: 2px solid #e5e5e5;
+
+  &:hover {
+    border: 2px solid #283645;
+    outline: 0;
+  }
+
+  &:active,
+  &:focus {
+    border: 2px solid #d22856;
+    outline: 0;
+  }
+
+  &::placeholder {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.form__user-platform-wrap {
+  margin-bottom: 38px;
+  padding-top: 38px;
+  background-color: @bg-lightgrey;
+}
+
+.form__user-platform {
+  .indent-reset;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  border: none;
+}
+
+.form__user-platform-title {
+  .indent-reset;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 0 20px;
+  .title-form;
+}
+
+.form__user-platform-list {
+  .list-reset;
+}
+
+.form__user-platform-item {
+  margin-bottom: 46px;
+  padding-left: 70px;
+}
+
+.form__user-platform-label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  font-size: 18px;
+}
+
+.form__user-platform-input:hover + label::before {
+  border-color: #283645;
+}
+
+.form__user-platform-input:focus + label::before {
+  border-color: #d22856;
+}
+
+.form__user-platform-radio + label::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -70px;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+}
+
+.form__user-platform-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: -58px;
+  width: 15px;
+  height: 15px;
+  background-color: #d22856;
+  border-radius: 50%;
+}
+
+.form__user-comment {
+  .indent-reset;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  border: none;
+  padding-bottom: 48px;
+}
+
+.form__user-comment-title {
+  .indent-reset;
+  margin: 0 auto;
+  margin-bottom: 16px;
+  padding: 0 20px;
+  .title-form;
+}
+
+.form__user-comment-text {
+  box-sizing: border-box;
+  width: 280px;
+  padding: 16px 18px 34px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+  border: 2px solid #e5e5e5;
+
+  &:hover {
+    border: 2px solid #283645;
+    outline: 0;
+  }
+
+  &:active,
+  &:focus {
+    border: 2px solid #d22856;
+    outline: 0;
+  }
+
+  &::placeholder {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.form__user-button {
+  display: block;
+  width: 280px;
+  margin: 0 auto 35px;
+  padding-top: 17px;
+  padding-bottom: 16px;
+  line-height: 30px;
+  font-weight: 700;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: #2aab6d;
+  border: none;
+  outline: 0;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:focus {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
+}
+
+.form__user-text {
+  .indent-reset;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.form__user-text-star {
+  color: #d22856;
+}
+
+.form__user-text-hidden {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .form__user {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form__title-wrap {
+    width: 620px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .form__title-hidden {
+    display: inline;
+  }
+
+  .form__title {
+    margin: 93px 60px 71px;
+    font-size: 18px;
+  }
+
+  .form__user-list {
+    width: 620px;
+    margin: 0 auto;
+    padding: 0 20px;
+    order: -1;
+  }
+
+  .form__user-item {
+    flex-direction: row;
+    width: 620px;
+    margin-bottom: 51px;
+  }
+
+  .form__user-label {
+    padding-left: 0;
+    margin-right: 19px;
+    margin-top: 18px;
+    //font-weight: 300;
+  }
+
+  .form__user-input {
+    width: 100%;
+    padding: 15px 20px 15px;
+    font-size: 18px;
+    line-height: 30px;
+    // font-weight: 300;
+  }
+
+  .form__user-platform-wrap {
+    order: 2;
+    background-color: inherit;
+    margin: 0 auto;
+    padding-top: 1px;
+    margin-bottom: 51px;
+  }
+
+  .form__user-platform {
+    width: 616px;
+    padding: 0;
+    padding-bottom: 12px;
+    border: 2px solid #e5e5e5;
+  }
+
+  .form__user-platform-title {
+    margin-bottom: 43px;
+    padding: 0 30px;
+    line-height: 30px;
+  }
+
+  .form__user-platform-item {
+    padding-left: 117px;
+  }
+
+  .form__user-platform-radio + label::before {
+    left: -58px;
+  }
+
+  .form__user-platform-radio:checked + label::after {
+    left: -47px;
+  }
+
+  .form__user-contacts {
+    width: 616px;
+    margin-bottom: 13px;
+    padding: 0;
+    border: 2px solid #e5e5e5;
+    order: 3;
+  }
+
+  .form__user-contacts-title {
+    display: block;
+    .indent-reset;
+    margin-bottom: 31px;
+    padding: 0 31px;
+    .title-form;
+    line-height: 30px;
+  }
+
+  .form__user-contacts-item {
+    position: relative;
+    flex-direction: column-reverse;
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 23px;
+  }
+
+  .form__user-contacts-item::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 60px;
+    height: 60px;
+    background-color: #e5e5e5;
+  }
+
+  .form__user-contacts-input {
+    width: 500px;
+    padding: 23px 80px 21px 18px;
+    margin-bottom: 9px;
+  }
+
+  .form__user-contacts-label {
+    padding-left: 19px;
+  }
+
+  .form__user-contacts-phone {
+    background-color: transparent;
+    background-image: url("../img/icon-phone.svg");
+    background-position: 455px center;
+    background-repeat: no-repeat;
+    background-size: 20px 19px;
+    z-index: 2;
+  }
+
+  .form__user-contacts-email {
+    background-color: transparent;
+    background-image: url("../img/icon-mail.svg");
+    background-position: 457px center;
+    background-repeat: no-repeat;
+    background-size: 18px 13px;
+    z-index: 2;
+  }
+
+  .form__user-progress-wrap {
+    margin: 0 auto;
+    margin-bottom: 51px;
+    background-color: inherit;
+    order: 4;
+  }
+
+  .form__user-progress {
+    width: 616px;
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 2px;
+    border: 2px solid #e5e5e5;
+  }
+
+  .form__user-progress-title {
+    padding: 0 31px;
+    line-height: 30px;
+  }
+
+  .form__user-progress-item {
+    padding-left: 117px;
+  }
+
+  .form__user-progress-checkbox + label::before {
+    top: -5px;
+    left: -59px;
+  }
+
+  .form__user-progress-checkbox:checked + label::after {
+    top: 6px;
+    left: -50px;
+  }
+
+  .form__user-comment {
+    width: 616px;
+    margin-bottom: 67px;
+    padding: 0;
+    padding-bottom: 52px;
+    border: 2px solid #e5e5e5;
+    order: 5;
+  }
+
+  .form__user-comment-title {
+    margin-bottom: 31px;
+    padding: 0 38px;
+    line-height: 30px;
+  }
+
+  .form__user-comment-text {
+    box-sizing: border-box;
+    width: 500px;
+    margin: 0 auto;
+    padding: 15px 20px 25px 18px;
+  }
+
+  .form__user-button {
+    width: 300px;
+    margin: 0;
+    margin-left: 20px;
+    padding-bottom: 17px;
+    order: 6;
+  }
+
+  .form__user-text {
+    align-self: center;
+    margin-right: 20px;
+    order: 7;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__title-wrap {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+  .form__title {
+    margin: 93px 68px 65px;
+  }
+
+  .form__user {
+    display: flex;
+    align-items: stretch;
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+  .form__user-list {
+    display: flex;
+    justify-content: space-between;
+    width: 435px;
+    margin: 0;
+    padding: 0;
+    padding-right: 70px;
+    padding-top: 19px;
+  }
+
+  .form__user-item {
+    width: 435px;
+    display: flex;
+    margin-bottom: 52px;
+  }
+
+  .form__user-platform-wrap {
+    padding: 0;
+  }
+
+  .form__user-platform {
+    width: 431px;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 17px;
+    border: 2px solid #e5e5e5;
+  }
+
+  .form__user-platform-title {
+    margin-bottom: 45px;
+    padding: 0 24px;
+    line-height: 30px;
+  }
+
+  .form__user-platform-item {
+    margin-bottom: 44px;
+    padding-left: 134px;
+  }
+
+  .form__user-contacts {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 13px;
+  }
+
+  .form__user-contacts-title {
+    margin: 0 auto;
+    margin-bottom: 27px;
+  }
+
+  .form__user-contacts-wrap {
+    display: flex;
+    padding-right: 58px;
+    padding-left: 58px;
+    justify-content: space-between;
+  }
+
+  .form__user-contacts-item {
+    width: 374px;
+    margin: 0;
+  }
+
+  .form__user-contacts-input {
+    width: 374px;
+    padding-right: 80px;
+  }
+
+  .form__user-contacts-label {
+    margin-bottom: 14px;
+  }
+
+  .form__user-contacts-phone {
+    background-position: 332px center;
+  }
+
+  .form__user-contacts-email {
+    background-position: 332px center;
+  }
+
+  .form__user-progress {
+    width: 940px;
+    padding: 0;
+    padding-bottom: 7px;
+  }
+
+  .form__user-progress-title {
+    padding: 0 33px;
+  }
+
+  .form__user-progress-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 60px;
+    padding-right: 60px;
+    justify-content: space-between;
+  }
+
+  .form__user-progress-item {
+    padding-left: 58px;
+  }
+
+  .form__user-progress-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__user-comment {
+    width: 940px;
+    margin: 0 auto;
+    margin-bottom: 64px;
+    padding-bottom: 43px;
+  }
+
+  .form__user-comment-title {
+    margin-bottom: 28px;
+  }
+
+  .form__user-comment-text {
+    width: 820px;
+    height: 129px;
+    margin: 0 auto;
+    padding: 15px 20px 19px;
+  }
+
+  .form__user-button {
+    margin: 0;
+  }
+
+  .form__user-text {
+    margin-right: 0;
+  }
+
+  .form__user-text-hidden {
+    display: inline;
+  }
+}
