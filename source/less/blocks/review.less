@@ -1,7 +1,12 @@
 .review {
-  padding-top: 40px;
-  padding-bottom: 135px;
-  background: linear-gradient(175deg, #ffffff 0%, #ffffff 80%, #f2f2f2 80%, #f2f2f2 100%);
+  padding-top: 43px;
+  padding-bottom: 21px;
+  //background: linear-gradient(175deg, #ffffff 0%, #ffffff 80%, #f2f2f2 80%, #f2f2f2 100%);
+}
+
+.review__list {
+  .list-reset;
+  margin-bottom: 35px;
 }
 
 .review__item {
@@ -12,6 +17,7 @@
   font-size: 18px;
   color: #000000;
   font-weight: 700;
+  //margin-bottom: 10px;
 }
 
 .review__item-info {
@@ -19,12 +25,12 @@
 }
 
 .review__text {
-  margin-top: 15px;
-  margin-bottom: 0;
+  .indent-reset;
+  margin-top: 12px;
   color: #283645;
 }
 
-.review .slider {
+.review__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,8 +40,22 @@
   text-align: center;
 }
 
-.slider__toggle {
+.review__item-slide1,
+.review__item-slide2,
+.review__item-slide3 {
+  display: none;
+}
+
+.review__slider-controls {
+  .indent-reset;
+  margin-left: 10px;
+  font-size: 0;
+}
+
+.review__slider-controls label {
+  display: inline-block;
   padding: 0;
+  margin-right: 16px;
   border: none;
   width: 6px;
   height: 6px;
@@ -44,26 +64,145 @@
   cursor: pointer;
   outline: none;
 
-  &:not(.slider__toggle--active):hover {
-    background-color: #7e868f;
+  &:hover {
+    background-color: #283645;
   }
 
-  &:not(.slider__toggle--active):active {
-    opacity: 0.3;
+  &:active {
+    opacity: 0.1;
   }
 }
 
-.slider__toggle:not(:first-child) {
-  margin-left: 16px;
+.review__input-1:checked ~ .review__wrapper .review__item-slide1,
+.review__input-2:checked ~ .review__wrapper .review__item-slide2,
+.review__input-3:checked ~ .review__wrapper .review__item-slide3 {
+  display: block;
 }
 
-.slider__toggle--active {
-  width: 12px;
-  height: 12px;
+.review__input-1:checked ~ .review__wrapper label[for="review-1"],
+.review__input-2:checked ~ .review__wrapper label[for="review-2"],
+.review__input-3:checked ~ .review__wrapper label[for="review-3"] {
+  width: 6px;
+  height: 6px;
   background-color: #ffffff;
   border: 3px solid #283645;
 }
 
-.slider__arrows {
+.review__arrows {
   display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .review {
+    padding-top: 75px;
+    padding-bottom: 0;
+  }
+
+  .review__wrapper {
+    width: 620px;
+    padding: 0 20px;
+  }
+
+  .review__input-1:checked ~ .review__wrapper .review__item-slide1,
+  .review__input-2:checked ~ .review__wrapper .review__item-slide2,
+  .review__input-3:checked ~ .review__wrapper .review__item-slide3 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .review__item-info {
+    display: block;
+    order: -1;
+  }
+
+  .review__item-autor {
+    margin-bottom: 2px;
+    font-size: 20px;
+    order: 0;
+  }
+
+  .review__text {
+    margin-bottom: 35px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .review {
+    padding-top: 174px;
+  }
+
+  .review__wrapper {
+    position: relative;
+    width: 940px;
+  }
+
+  .review__wrapper::before {
+    content: "";
+    position: absolute;
+    top: -102px;
+    left: 453px;
+    width: 79px;
+    height: 63px;
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+  }
+
+  .review__list {
+    padding: 0 74px;
+  }
+
+  .review__item-autor {
+    font-size: 24px;
+  }
+
+  .review__text {
+    margin-bottom: 37px;
+  }
+
+  .review__item-info {
+    font-size: 18px;
+  }
+
+  .review__slider-controls {
+    display: none;
+  }
+
+  .review__arrows {
+    display: block;
+  }
+
+  .review__arrow {
+    position: absolute;
+    top: 38px;
+    width: 22px;
+    height: 42px;
+    overflow: hidden;
+    background-color: transparent;
+    z-index: 5;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    opacity: 0.3;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+  }
+
+  .review__arrow-left {
+    left: 20px;
+    background-image: url("../img/icon-review-arrow-left.svg");
+    background-repeat: no-repeat;
+  }
+
+  .review__arrow-right {
+    right: 20px;
+    background-image: url("../img/icon-review-arrow-right.svg");
+    background-repeat: no-repeat;
+  }
 }
