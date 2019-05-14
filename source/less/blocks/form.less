@@ -1,3 +1,7 @@
+.form {
+  margin-bottom: 54px;
+}
+
 .form__title-wrap {
   width: 280px;
   margin: 0 auto;
@@ -96,6 +100,10 @@
   padding: 0;
   margin-bottom: 52px;
   padding-left: 70px;
+}
+
+.form__user-progress-inner {
+  .list-reset;
 }
 
 .form__user-progress-label {
@@ -344,6 +352,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .form {
+    margin-bottom: 58px;
+  }
+
   .form__user {
     display: flex;
     flex-wrap: wrap;
@@ -449,6 +461,7 @@
     width: 500px;
     margin: 0 auto;
     margin-bottom: 23px;
+    padding: 0;
   }
 
   .form__user-contacts-item::after {
@@ -463,8 +476,11 @@
 
   .form__user-contacts-input {
     width: 500px;
-    padding: 23px 80px 21px 18px;
     margin-bottom: 9px;
+    padding: 15px 80px 16px 18px;
+    font-size: 18px;
+    line-height: 30px;
+
   }
 
   .form__user-contacts-label {
@@ -561,6 +577,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .form {
+    margin-bottom: 9px;
+  }
+
   .form__title-wrap {
     width: 940px;
     margin: 0 auto;
@@ -660,13 +680,17 @@
   }
 
   .form__user-progress {
-    width: 940px;
+    width: 936px;
     padding: 0;
     padding-bottom: 7px;
   }
 
   .form__user-progress-title {
-    padding: 0 33px;
+    padding: 0px 30px;
+  }
+
+  .form__user-progress-inner {
+    // margin-right: 3px;
   }
 
   .form__user-progress-list {
@@ -681,6 +705,7 @@
   .form__user-progress-item {
     padding-left: 58px;
   }
+
 
   .form__user-progress-container {
     display: flex;
