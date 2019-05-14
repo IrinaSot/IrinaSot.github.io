@@ -2505,7 +2505,7 @@ input[type="radio"].visually-hidden {
     padding-bottom: 7px;
   }
   .form__user-progress-title {
-    padding: 0px 30px;
+    padding: 0 30px;
   }
   .form__user-progress-list {
     display: -webkit-box;
