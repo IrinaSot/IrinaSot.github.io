@@ -4,17 +4,16 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
-  <link href="css/style.css" rel="stylesheet">
-  <!-- <link href="css/style.min.css" rel="stylesheet">-->
+  <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <script src="js/picturefill.js"></script>
 </head>
 
 <body>
-  <!-- <div style="display: none">
- <include src="build/img/sprite.svg"></include>
-  </div>-->
   <header class="page-header">
     <div class="page-header__menu-wrapp">
       <div class="page-header__top page-header__top-open page-header__top--nojs">
@@ -62,7 +61,6 @@
                 <svg version="1.1" id="Layer_4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="47" height="56" viewBox="0 0 46.21 56.753" enable-background="new 0 0 46.21 56.753" xml:space="preserve">
                   <use xlink:href="img/sprite.svg#logo-apple"></use>
                 </svg>
-
               </a>
             </li>
             <li class="download__application-item">
@@ -70,7 +68,6 @@
                 <svg version="1.1" id="Layer_5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="43" height="47" viewBox="0 0 42.084 47.041" enable-background="new 0 0 42.084 47.041" xml:space="preserve">
                   <use xlink:href="img/sprite.svg#logo-android"></use>
                 </svg>
-
               </a>
             </li>
             <li class="download__application-item">
@@ -85,7 +82,6 @@
         </div>
       </div>
     </section>
-
   </header>
 
   <main class="page-main">
@@ -108,7 +104,7 @@
             </li>
             <li class="advantages__item">
               <h3 class="advantages__title">Заводит новых друзей</h3>
-              <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых </p>
             </li>
           </ul>
         </div>
@@ -257,13 +253,11 @@
             </tr>
           </tbody>
         </table>
-
         <div class="price__toggles-controls">
           <label class="price__toggles-button" for="btn-1"></label>
           <label class="price__toggles-button" for="btn-2"></label>
           <label class="price__toggles-button" for="btn-3"></label>
         </div>
-
       </div>
     </section>
 
@@ -294,7 +288,16 @@
       <div class="contacts__map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7994.396461306528!2d30.323083!3d59.938794!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1556028070856!5m2!1sru!2sru" width="320" height="200" style="border:0" allowfullscreen></iframe>
-        <img class="visually-hidden" src="img/bg-map-mobile@1x.png" width="320" height="200" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        <p class="contacts__map-wrap ">
+          <picture>
+            <source type="image/webp" media="(min-width:960px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width:660px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
+            <source media="(min-width:960px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+            <source media="(min-width:660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+            <img class="contacts__map-img " src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+          </picture>
+        </p>
       </div>
     </section>
     <footer class="page-footer">

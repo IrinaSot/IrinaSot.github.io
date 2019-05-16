@@ -305,16 +305,19 @@ template {
 @font-face {
   font-family: "Open Sans";
   font-weight: 400;
+  font-display: swap;
   src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
 }
 @font-face {
   font-family: "Open Sans";
   font-weight: 700;
+  font-display: swap;
   src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
 }
 @font-face {
   font-family: "Open Sans";
   font-weight: 300;
+  font-display: swap;
   src: url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff");
 }
 body {
@@ -910,6 +913,7 @@ input[type="radio"].visually-hidden {
   .download__title {
     font-size: 50px;
     line-height: 60px;
+    width: 300px;
   }
   .download__button {
     font-size: 21px;
@@ -923,6 +927,7 @@ input[type="radio"].visually-hidden {
     margin-bottom: 46px;
   }
   .download__caption {
+    width: 300px;
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 91px;
@@ -1123,7 +1128,7 @@ input[type="radio"].visually-hidden {
   .advantages__research-wrapp::before {
     content: "";
     position: absolute;
-    bottom: -22px;
+    top: -36px;
     left: -309px;
     width: 238px;
     height: 276px;
@@ -1183,7 +1188,7 @@ input[type="radio"].visually-hidden {
   .advantages__list li:first-of-type::before {
     content: "";
     position: absolute;
-    bottom: 180px;
+    top: -358px;
     left: -26px;
     width: 292px;
     height: 382px;
@@ -1194,7 +1199,7 @@ input[type="radio"].visually-hidden {
   .advantages__list li:nth-of-type(2)::before {
     content: "";
     position: absolute;
-    bottom: 180px;
+    top: -358px;
     left: -22px;
     width: 292px;
     height: 382px;
@@ -1249,7 +1254,7 @@ input[type="radio"].visually-hidden {
   .advantages__research-wrapp::before {
     content: "";
     position: absolute;
-    bottom: -47px;
+    top: -94px;
     left: 1px;
     width: 298px;
     height: 345px;
@@ -1360,10 +1365,12 @@ input[type="radio"].visually-hidden {
     background-size: 2560px 853px;
   }
   .page-photo__title {
+    width: 370px;
     font-size: 50px;
     line-height: 60px;
     padding-left: 200px;
     padding-right: 200px;
+    margin: 0 auto;
   }
 }
 @media (min-width: 960px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 960px) and (min-resolution: 144dpi), (min-width: 960px) and (min-resolution: 1.5dppx) {
@@ -1656,8 +1663,8 @@ input[type="radio"].visually-hidden {
     margin-bottom: 6px;
   }
   .photo-album__title {
-    margin-left: 150px;
-    margin-right: 150px;
+    width: 575px;
+    margin: 0 auto;
   }
   .photo-album__title-wrapper {
     padding-bottom: 88px;
@@ -1725,7 +1732,7 @@ input[type="radio"].visually-hidden {
 }
 .page-contest__title-wrapper {
   margin-top: -66px;
-  margin-bottom: 45px;
+  margin-bottom: 46px;
   padding-top: 96px;
   padding-bottom: 52px;
   padding-left: 20px;
@@ -1774,8 +1781,8 @@ input[type="radio"].visually-hidden {
     background-size: 2560px 853px;
   }
   .page-contest__title {
-    padding-left: 50px;
-    padding-right: 50px;
+    width: 820px;
+    margin: 0 auto;
   }
 }
 @media (min-width: 960px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 960px) and (min-resolution: 144dpi), (min-width: 960px) and (min-resolution: 1.5dppx) {
@@ -1791,7 +1798,7 @@ input[type="radio"].visually-hidden {
   width: 280px;
   margin: 0 auto;
   padding: 0 20px;
-  margin-bottom: 36px;
+  margin-bottom: 35px;
 }
 .form__title {
   margin: 0;
@@ -1816,7 +1823,7 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   padding: 0 20px;
   border: none;
-  padding-bottom: 23px;
+  padding-bottom: 26px;
 }
 .form__user-item {
   margin: 0;
@@ -1829,7 +1836,7 @@ input[type="radio"].visually-hidden {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 280px;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 .form__user-label {
   display: block;
@@ -1842,6 +1849,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 280px;
+  height: 64px;
   padding: 22px 20px 21px;
   border: 2px solid #e5e5e5;
 }
@@ -2261,11 +2269,11 @@ input[type="radio"].visually-hidden {
     left: -58px;
   }
   .form__user-platform-radio:checked + label::after {
-    left: -47px;
+    left: -46px;
   }
   .form__user-contacts {
     width: 616px;
-    margin-bottom: 13px;
+    margin-bottom: 12px;
     padding: 0;
     border: 2px solid #e5e5e5;
     -webkit-box-ordinal-group: 4;
@@ -2298,16 +2306,17 @@ input[type="radio"].visually-hidden {
   .form__user-contacts-item::after {
     content: "";
     position: absolute;
-    top: 2px;
-    right: 2px;
+    top: 1px;
+    right: 1px;
     width: 60px;
-    height: 60px;
+    height: 61px;
     background-color: #e5e5e5;
   }
   .form__user-contacts-input {
     width: 500px;
+    height: 64px;
     margin-bottom: 9px;
-    padding: 15px 80px 16px 18px;
+    padding: 14px 80px 16px 18px;
     font-size: 18px;
     line-height: 30px;
   }
@@ -2441,7 +2450,7 @@ input[type="radio"].visually-hidden {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 52px;
+    margin-bottom: 51px;
   }
   .form__user-platform-wrap {
     padding: 0;
@@ -2716,14 +2725,21 @@ input[type="radio"].visually-hidden {
     padding-top: 63px;
     padding-bottom: 75px;
   }
+  .page-footer__copyright {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 155px;
+  }
   .page-footer__copyright-text {
     font-size: 18px;
     line-height: 18px;
-    margin-right: 13px;
-    margin-left: -18px;
+    margin-right: 0;
+    margin-left: 0;
   }
   .page-footer__copyright-link {
-    margin-right: -9px;
+    margin: 0;
+    padding: 0;
     padding-top: 11px;
   }
   .page-footer__logo {
@@ -2731,7 +2747,7 @@ input[type="radio"].visually-hidden {
     margin-top: -7px;
   }
   .page-footer__social {
-    margin-right: 245px;
+    margin-right: 226px;
   }
   .download__application-link--microsoft {
     margin-top: 6px;
@@ -3271,6 +3287,7 @@ input[type="radio"].visually-hidden {
   }
   .review__text {
     margin-bottom: 37px;
+    width: 700px;
   }
   .review__item-info {
     font-size: 18px;
@@ -3685,6 +3702,31 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/bg-triangle-white-footer.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  z-index: 4;
+}
+.contacts__map iframe {
+  position: relative;
+  z-index: 3;
+  border: 0;
+}
+.contacts__map-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 200px;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.contacts__map-wrap::before {
+  content: "";
+  position: absolute;
+  top: 47%;
+  left: 44%;
+  width: 36px;
+  height: 35px;
+  background: url("../img/icon-map-marker.svg") no-repeat 0 0;
   z-index: 2;
 }
 @media (min-width: 660px) {
@@ -3736,6 +3778,13 @@ input[type="radio"].visually-hidden {
     width: 100%;
     height: 123px;
   }
+  .contacts__map-wrap {
+    height: 371px;
+  }
+  .contacts__map-wrap::before {
+    top: 52%;
+    left: 47%;
+  }
 }
 @media (min-width: 960px) {
   .contacts {
@@ -3782,6 +3831,13 @@ input[type="radio"].visually-hidden {
   }
   .contacts__map::before {
     top: 0;
+  }
+  .contacts__map-wrap {
+    height: 500px;
+  }
+  .contacts__map-wrap::before {
+    top: 262px;
+    left: 572px;
   }
 }
 .popup {
