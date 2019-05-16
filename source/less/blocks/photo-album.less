@@ -2,14 +2,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
 }
 
 .photo-album__title {
   .indent-reset;
   text-align: center;
   color: #283645;
-  //font-weight: 300;
 }
 
 .photo-album__title-wrapper {
@@ -30,7 +29,7 @@
   width: 280px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 22px;
+  margin-bottom: 21px;
 }
 
 .photo-album__link {
@@ -48,15 +47,17 @@
   .photo-album__caption {
     margin-left: 20px;
     margin-right: 20px;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
+    padding-top: 15px;
   }
 
   .photo-album__text {
     .indent-reset;
-    margin-bottom: 13px;
+    margin-bottom: 10px;
+    margin-top: -3px;
     font-weight: 400;
     font-size: 14px;
-    line-height: 23px;
+    line-height: 24px;
   }
 }
 
@@ -77,8 +78,8 @@
   margin: 0;
   padding-left: 17px;
   padding-right: 20px;
-  padding-top: 15px;
-  padding-bottom: 19px;
+  padding-top: 16px;
+  padding-bottom: 20px;
 
   color: #283645;
 
@@ -86,7 +87,6 @@
 }
 
 .photo-album__caption-wrap {
-  // display: inline-block;
   margin: 0;
   padding: 0;
 }
@@ -94,6 +94,7 @@
 .photo-album__autor-name {
   margin: 0;
   padding: 0;
+  line-height: 24px;
   font-weight: 700;
   font-style: normal;
 }
@@ -109,9 +110,10 @@
 .photo-album__text {
   .indent-reset;
   margin-bottom: 9px;
+  margin-top: -3px;
   font-weight: 400;
   font-size: 14px;
-  line-height: 23px;
+  line-height: 24px;
 }
 
 .photo-album__like-wrap {
@@ -133,8 +135,6 @@
 
 .photo-album__like-text {
   .indent-reset;
-
-  font-family: @ff-light;
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
@@ -146,7 +146,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-bottom: 47px;
+    margin-bottom: 45px;
   }
 
   .photo-album__item-container {
@@ -208,7 +208,7 @@
     .photo-album__text {
       order: 2;
       font-weight: 400;
-      margin-bottom: 8px;
+      margin-bottom: 12px;
     }
 
     .photo-album__like-wrap {
@@ -216,7 +216,7 @@
     }
 
     .photo-album__like {
-      margin-right: 9px;
+      margin-right: 8px;
       margin-left: 19px;
     }
   }
@@ -231,11 +231,11 @@
     flex-direction: column;
     padding-top: 22px;
     padding-left: 27px;
-    padding-bottom: 22px;
+    padding-bottom: 23px;
   }
 
   .photo-album__text {
-    margin-bottom: 7px;
+    margin-bottom: 10px;
     font-weight: 400;
     min-height: 50px;
   }
@@ -256,13 +256,12 @@
 
 @media (min-width: @desktop-width) {
   .photo-album {
-    margin-bottom: 8px;
+    margin-bottom: 6px;
   }
 
   .photo-album__title {
-    margin-left: 150px;
-    margin-right: 150px;
-    //font-weight: 300;
+    width: 575px;
+    margin: 0 auto;
   }
 
   .photo-album__title-wrapper {
@@ -287,8 +286,9 @@
 
   .photo-album__photo-day {
     top: 54px;
-    right: 130px;
+    right: 124px;
     padding-top: 4px;
+    padding-bottom: 8px;
   }
 
   .photo-album__prime {
@@ -304,22 +304,22 @@
     }
 
     .photo-album__like {
-      margin-right: 2px;
+      margin-right: -2px;
+      margin-left: 18px;
     }
 
     .photo-album__caption {
       width: 880px;
       margin: 0 auto;
-      padding-left: 23px;
-      padding-right: 30px;
+      padding-left: 26px;
+      padding-right: 34px;
       padding-bottom: 20px;
       min-height: 50px;
     }
 
     .photo-album__text {
-      margin-bottom: 7px;
-      line-height: 18px;
-      font-weight: 300;
+      margin-bottom: 4px;
+      line-height: 24px;
       min-height: 18px;
     }
   }
@@ -332,7 +332,6 @@
   }
 
   .photo-album__text {
-    font-weight: 300;
-    line-height: 22px;
+    line-height: 24px;
   }
 }

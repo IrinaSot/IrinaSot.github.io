@@ -1,8 +1,12 @@
+.form {
+  margin-bottom: 54px;
+}
+
 .form__title-wrap {
   width: 280px;
   margin: 0 auto;
   padding: 0 20px;
-  margin-bottom: 36px;
+  margin-bottom: 35px;
 }
 
 .form__title {
@@ -23,7 +27,7 @@
   margin: 0 auto;
   padding: 0 20px;
   border: none;
-  padding-bottom: 23px;
+  padding-bottom: 26px;
 }
 
 .form__user-item {
@@ -31,7 +35,7 @@
   display: flex;
   flex-direction: column;
   width: 280px;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .form__user-label {
@@ -45,6 +49,7 @@
 .form__user-input {
   box-sizing: border-box;
   width: 280px;
+  height: 64px;
   padding: 22px 20px 21px;
   border: 2px solid #e5e5e5;
 
@@ -96,6 +101,10 @@
   padding: 0;
   margin-bottom: 52px;
   padding-left: 70px;
+}
+
+.form__user-progress-inner {
+  .list-reset;
 }
 
 .form__user-progress-label {
@@ -344,6 +353,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .form {
+    margin-bottom: 58px;
+  }
+
   .form__user {
     display: flex;
     flex-wrap: wrap;
@@ -390,7 +403,6 @@
     padding: 15px 20px 15px;
     font-size: 18px;
     line-height: 30px;
-    // font-weight: 300;
   }
 
   .form__user-platform-wrap {
@@ -423,12 +435,12 @@
   }
 
   .form__user-platform-radio:checked + label::after {
-    left: -47px;
+    left: -46px;
   }
 
   .form__user-contacts {
     width: 616px;
-    margin-bottom: 13px;
+    margin-bottom: 12px;
     padding: 0;
     border: 2px solid #e5e5e5;
     order: 3;
@@ -449,22 +461,26 @@
     width: 500px;
     margin: 0 auto;
     margin-bottom: 23px;
+    padding: 0;
   }
 
   .form__user-contacts-item::after {
     content: "";
     position: absolute;
-    top: 2px;
-    right: 2px;
+    top: 1px;
+    right: 1px;
     width: 60px;
-    height: 60px;
+    height: 61px;
     background-color: #e5e5e5;
   }
 
   .form__user-contacts-input {
     width: 500px;
-    padding: 23px 80px 21px 18px;
+    height: 64px;
     margin-bottom: 9px;
+    padding: 14px 80px 16px 18px;
+    font-size: 18px;
+    line-height: 30px;
   }
 
   .form__user-contacts-label {
@@ -561,6 +577,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .form {
+    margin-bottom: 9px;
+  }
+
   .form__title-wrap {
     width: 940px;
     margin: 0 auto;
@@ -592,7 +612,7 @@
   .form__user-item {
     width: 435px;
     display: flex;
-    margin-bottom: 52px;
+    margin-bottom: 51px;
   }
 
   .form__user-platform-wrap {
@@ -660,13 +680,13 @@
   }
 
   .form__user-progress {
-    width: 940px;
+    width: 936px;
     padding: 0;
     padding-bottom: 7px;
   }
 
   .form__user-progress-title {
-    padding: 0 33px;
+    padding: 0 30px;
   }
 
   .form__user-progress-list {
@@ -681,6 +701,7 @@
   .form__user-progress-item {
     padding-left: 58px;
   }
+
 
   .form__user-progress-container {
     display: flex;
