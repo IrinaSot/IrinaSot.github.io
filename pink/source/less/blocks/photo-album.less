@@ -1,0 +1,337 @@
+.photo-album {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.photo-album__title {
+  .indent-reset;
+  text-align: center;
+  color: #283645;
+}
+
+.photo-album__title-wrapper {
+  padding: 47px 20px 49px;
+}
+
+.photo-album__item-wrap {
+  width: 320px;
+  margin: 0;
+}
+
+.photo-album__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  .list-reset;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 21px;
+}
+
+.photo-album__link {
+  .indent-reset;
+}
+
+.photo-album__image {
+  display: block;
+}
+
+.photo-album__prime {
+  width: 320px;
+  margin: 0 auto;
+
+  .photo-album__caption {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+  }
+
+  .photo-album__text {
+    .indent-reset;
+    margin-bottom: 10px;
+    margin-top: -3px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.photo-album__photo-day {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  padding: 4px 20px 8px 19px;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #d22856;
+}
+
+.photo-album__caption {
+  margin: 0;
+  padding-left: 17px;
+  padding-right: 20px;
+  padding-top: 16px;
+  padding-bottom: 20px;
+
+  color: #283645;
+
+  background-color: @bg-lightgrey;
+}
+
+.photo-album__caption-wrap {
+  margin: 0;
+  padding: 0;
+}
+
+.photo-album__autor-name {
+  margin: 0;
+  padding: 0;
+  line-height: 24px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.photo-album__time {
+  .indent-reset;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.photo-album__text {
+  .indent-reset;
+  margin-bottom: 9px;
+  margin-top: -3px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.photo-album__like-wrap {
+  display: flex;
+  .indent-reset;
+}
+
+.photo-album__like {
+  .indent-reset;
+  margin-right: 19px;
+
+  border: none;
+  background-color: @bg-lightgrey;
+}
+
+.photo-album__like svg {
+  fill: #d22856;
+}
+
+.photo-album__like-text {
+  .indent-reset;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #d22856;
+}
+
+@media (min-width: @tablet-width) {
+  .photo-album {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 45px;
+  }
+
+  .photo-album__item-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 660px;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+
+  .photo-album__title-wrapper {
+    width: 100%;
+    padding: 93px 60px 76px;
+    font-size: 18px;
+  }
+
+  .photo-album__title {
+    font-weight: 400;
+  }
+
+  .photo-album__item-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 660px;
+    margin: 0;
+  }
+
+  .photo-album__item {
+    display: flex;
+    width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .photo-album__prime {
+    width: 660px;
+    margin-bottom: 29px;
+
+    .photo-album__image {
+      width: 705px;
+      height: 509px;
+    }
+
+    .photo-album__caption {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 21px;
+      padding-left: 28px;
+      padding-bottom: 11px;
+    }
+
+    .photo-album__caption-wrap {
+      width: 274px;
+    }
+
+    .photo-album__text {
+      order: 2;
+      font-weight: 400;
+      margin-bottom: 12px;
+    }
+
+    .photo-album__like-wrap {
+      align-items: center;
+    }
+
+    .photo-album__like {
+      margin-right: 8px;
+      margin-left: 19px;
+    }
+  }
+
+  .photo-album__photo-day {
+    top: 57px;
+    padding: 3px 20px 9px 19px;
+  }
+
+  .photo-album__caption {
+    display: flex;
+    flex-direction: column;
+    padding-top: 22px;
+    padding-left: 27px;
+    padding-bottom: 23px;
+  }
+
+  .photo-album__text {
+    margin-bottom: 10px;
+    font-weight: 400;
+    min-height: 50px;
+  }
+
+  .photo-album__like-wrap {
+    justify-content: space-between;
+  }
+
+  .photo-album__like {
+    order: 2;
+    margin-right: 12px;
+  }
+
+  .photo-album__image {
+    width: 300px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-album {
+    margin-bottom: 6px;
+  }
+
+  .photo-album__title {
+    width: 575px;
+    margin: 0 auto;
+  }
+
+  .photo-album__title-wrapper {
+    padding-bottom: 88px;
+  }
+
+  .photo-album__item-wrap {
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .photo-album__item {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 53px;
+  }
+
+  .photo-album__caption {
+    min-height: 111px;
+  }
+
+  .photo-album__photo-day {
+    top: 54px;
+    right: 124px;
+    padding-top: 4px;
+    padding-bottom: 8px;
+  }
+
+  .photo-album__prime {
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+    .photo-album__image {
+      margin: 0;
+      padding: 0;
+      width: 1200px;
+      height: 506px;
+    }
+
+    .photo-album__like {
+      margin-right: -2px;
+      margin-left: 18px;
+    }
+
+    .photo-album__caption {
+      width: 880px;
+      margin: 0 auto;
+      padding-left: 26px;
+      padding-right: 34px;
+      padding-bottom: 20px;
+      min-height: 50px;
+    }
+
+    .photo-album__text {
+      margin-bottom: 4px;
+      line-height: 24px;
+      min-height: 18px;
+    }
+  }
+
+  .photo-album__item-container {
+    justify-content: space-between;
+    width: 940px;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+
+  .photo-album__text {
+    line-height: 24px;
+  }
+}
